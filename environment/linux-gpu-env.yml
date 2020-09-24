@@ -3,12 +3,12 @@ channels:
 - pytorch
 - anaconda  # for mkl
 dependencies:
-- joblib=0.9.4
-- matplotlib=2.0.2=np111py35_0
+- joblib
+- matplotlib=2.0.2
 - mkl=2018.0.2  # Need to add explicit dependence for pytorch
 - numpy=1.11.3
-- python=3.5.2
-- python-dateutil=2.6.1=py35_0
+- python
+- python-dateutil
 - pytorch=1.0.0
 - scipy=1.0.1
 - pip:
