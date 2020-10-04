@@ -220,7 +220,6 @@ def createMultipleSims(num_workers=1):
     # it 500//15 = 33
     image_res = args.img_dim
     pool = pp.ProcessPool(num_workers)
-    import pdb; pdb.set_trace()
     with h5py.File(filename, 'w') as f:
         for folder in datasets:
             cur_folder = f.create_group(folder)
