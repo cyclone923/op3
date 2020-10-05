@@ -111,7 +111,7 @@ if __name__ == "__main__":
     parser = ArgumentParser()
     parser.add_argument('-va', '--variant', type=str, required=True,
                         choices=['stack', 'pickplace', 'cloth'])
-    parser.add_argument('-de', '--debug', type=int, default=1)  # Note: Change this to 0 to run on the entire dataset!
+    parser.add_argument('-de', '--debug', type=int, default=0)  # Note: Change this to 0 to run on the entire dataset!
     parser.add_argument('-m', '--mode', type=str, default='here_no_doodad')  # Relevant options: 'here_no_doodad', 'local_docker', 'ec2'
 
     args = parser.parse_args()
