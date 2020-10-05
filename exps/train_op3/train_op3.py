@@ -65,6 +65,7 @@ def load_dataset(data_path, train=True, size=None, batchsize=8, static=True):
 
 def train_vae(variant):
     from op3.core import logger
+    import sys
     seed = int(variant['seed'])
     torch.manual_seed(seed)
     np.random.seed(seed)
@@ -102,6 +103,7 @@ def train_vae(variant):
             logger.record_tabular(k, v)
         logger.dump_tabular()
         t.save_model()
+        sys.stdout.flush()
 
 
 #Example run:
